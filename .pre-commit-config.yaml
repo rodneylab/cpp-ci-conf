@@ -31,4 +31,4 @@ repos:
   - hooks:
       - id: yamlfmt
     repo: https://github.com/google/yamlfmt
-    rev: v0.17.2
+    rev: v0.20.0
