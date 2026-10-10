@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@05e31511f85b41b11d1cf0ef85d0992719546e2c # v2.21.0
+        uses: step-security/harden-runner@e14015d583714f6e62063499dc959a02595150a1 # v2.21.1
         with:
           egress-policy: audit
           disable-telemetry: true
@@ -19,7 +19,7 @@ jobs:
       - name: install
         run: sudo apt-get update
       - name: Setup Cpp
-        uses: aminya/setup-cpp@8170d66c458f4a045220b7b0966c10940bb2a15d # v1.8.1
+        uses: aminya/setup-cpp@59179aabb1f9453d12daf81c00d789af3b67b1a6 # v1.10.0
         with:
           clangtidy: true
       - name: configure
